@@ -1,7 +1,7 @@
 import { REVIEWS } from '../data/content.js';
 
 const Star = () => (
-  <svg width="17" height="17" viewBox="0 0 24 24" fill="#F2B01E">
+  <svg width="17" height="17" viewBox="0 0 24 24" fill="#C9A87E">
     <path d="m12 2 3 6.6 7.2 1-5.2 5 1.3 7.1L12 18.4 5.7 21.7 7 14.6 1.8 9.6l7.2-1L12 2Z" />
   </svg>
 );

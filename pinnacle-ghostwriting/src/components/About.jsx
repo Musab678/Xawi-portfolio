@@ -10,7 +10,7 @@ export default function About({ onOpen }) {
       <div className="about-photo" aria-hidden="true" />
       <div className="about-veil" aria-hidden="true" />
       <svg className="topo" viewBox="0 0 1200 600" preserveAspectRatio="none" aria-hidden="true">
-        <g fill="none" stroke="#E6D8C8" strokeWidth="1.4">
+        <g fill="none" stroke="#E2CFC0" strokeWidth="1.4">
           <path d="M-50 120C180 40 340 210 520 150s300-120 480-40 260 40 300 10" />
           <path d="M-50 180C180 100 340 270 520 210s300-120 480-40 260 40 300 10" />
           <path d="M-50 250C180 170 340 340 520 280s300-120 480-40 260 40 300 10" />
@@ -23,15 +23,13 @@ export default function About({ onOpen }) {
 
       <div className="wrap center rv">
         <p className="kicker">Elevate Your Narrative With Our Professionals</p>
-        <h2>Step Into The World Of Literature With Our Creative Minds</h2>
+        <h2>We don&rsquo;t just write, we build<br />complete, market ready books</h2>
         <p className="lede" style={{ marginTop: 18 }}>
-          Give us the idea and we'll shape it into a finished book. Our team writes, edits, proofreads and
-          publishes across the platforms readers actually buy from — Amazon, Barnes &amp; Noble, Kobo and more.
-          Your story, your voice and your expertise stay yours the whole way through.
+          From idea to final launch, every step is handled with precision, creativity, and strategy.
         </p>
         <div className="btns">
-          <button className="btn btn-gold" onClick={onOpen}>Let's Discuss Your Book</button>
-          <button className="btn btn-dark" onClick={onOpen}>Live Chat</button>
+          <button className="btn btn-gold" onClick={onOpen}>Start Your Project</button>
+          <button className="btn btn-dark" onClick={onOpen}>Book a Consultation</button>
         </div>
       </div>
 

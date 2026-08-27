@@ -33,15 +33,15 @@ export default function Modal({ open, onClose }) {
         <button className="x" id="close" aria-label="Close" onClick={onClose}>&times;</button>
         <div className="modal-art">
           <svg viewBox="0 0 220 300" fill="none" aria-hidden="true">
-            <rect x="30" y="36" width="160" height="212" rx="4" fill="#0A332C" stroke="#D9A93A" strokeWidth="2" />
-            <rect x="46" y="52" width="128" height="180" rx="2" stroke="#6FCFB8" strokeOpacity=".5" />
-            <path d="M110 92l13 27 30 4-22 21 5 30-26-14-26 14 5-30-22-21 30-4 13-27Z" fill="#D9A93A" />
-            <rect x="70" y="184" width="80" height="6" rx="3" fill="#6FCFB8" />
+            <rect x="30" y="36" width="160" height="212" rx="4" fill="#2C1724" stroke="#C9A87E" strokeWidth="2" />
+            <rect x="46" y="52" width="128" height="180" rx="2" stroke="#E0B7C2" strokeOpacity=".5" />
+            <path d="M110 92l13 27 30 4-22 21 5 30-26-14-26 14 5-30-22-21 30-4 13-27Z" fill="#C9A87E" />
+            <rect x="70" y="184" width="80" height="6" rx="3" fill="#E0B7C2" />
             <rect x="86" y="202" width="48" height="5" rx="2.5" fill="#fff" fillOpacity=".4" />
           </svg>
         </div>
         <div className="modal-body">
-          <p className="kicker" style={{ color: 'var(--gold)' }}>Limited Time Offer</p>
+          <p className="kicker" style={{ color: 'var(--plum)' }}>Limited Time Offer</p>
           <h3>Turn your author <span className="t-gold">dreams into reality</span></h3>
           <div className="off">70% Off Everything</div>
           {!sent && (
@@ -55,7 +55,7 @@ export default function Modal({ open, onClose }) {
           )}
           {sent && (
             <p id="done" style={{ color: 'var(--deep)', fontWeight: 600, marginTop: 16 }}>
-              Thanks — we'll be in touch within one business day.
+              Thanks, we'll be in touch within one business day.
             </p>
           )}
         </div>

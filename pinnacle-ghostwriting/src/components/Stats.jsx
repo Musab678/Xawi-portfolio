@@ -37,13 +37,13 @@ export default function Stats() {
       <section className="stats">
         <div className="stats-photo" aria-hidden="true">
           <svg viewBox="0 0 400 800" preserveAspectRatio="xMidYMid slice">
-            <rect width="400" height="800" fill="#0E4A42" />
-            <circle cx="230" cy="250" r="105" fill="#2C6F64" />
-            <path d="M60 800c0-190 80-290 170-290s170 100 170 290H60Z" fill="#1D5A50" />
-            <g stroke="#0B3A34" strokeWidth="7" fill="none">
+            <rect width="400" height="800" fill="#452639" />
+            <circle cx="230" cy="250" r="105" fill="#6E4459" />
+            <path d="M60 800c0-190 80-290 170-290s170 100 170 290H60Z" fill="#57324A" />
+            <g stroke="#331B2A" strokeWidth="7" fill="none">
               <circle cx="200" cy="252" r="34" /><circle cx="284" cy="252" r="34" /><path d="M234 252h16" />
             </g>
-            <rect x="300" y="470" width="120" height="170" rx="6" fill="#3A8479" />
+            <rect x="300" y="470" width="120" height="170" rx="6" fill="#8A5B72" />
           </svg>
         </div>
         <div className="wrap">

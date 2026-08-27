@@ -9,6 +9,9 @@ import CtaStrip from './components/CtaStrip.jsx';
 import Testimonials from './components/Testimonials.jsx';
 import Footer from './components/Footer.jsx';
 import Modal from './components/Modal.jsx';
+import Retailers from './components/Retailers.jsx';
+import Services from './components/Services.jsx';
+import { Publishing, Marketing, Pricing } from './components/Sections.jsx';
 
 export default function App() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -56,10 +59,15 @@ export default function App() {
 
       <Header onOpen={openModal} />
       <Hero onOpen={openModal} />
+      <Retailers />
       <About onOpen={openModal} />
+      <Services />
       <Stats />
+      <Publishing />
       <Genres />
       <Showcase />
+      <Marketing onOpen={openModal} />
+      <Pricing onOpen={openModal} />
       <CtaStrip onOpen={openModal} />
       <Testimonials />
       <Footer />
