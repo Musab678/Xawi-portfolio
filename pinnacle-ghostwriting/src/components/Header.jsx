@@ -41,10 +41,16 @@ export default function Header({ onOpen }) {
   useEffect(() => {
     const onScroll = () => {
       setStuck(window.scrollY > 40);
+      /* the page order of sections differs from the menu order (About sits right
+         under the hero), so pick the section whose top passed the header most
+         recently rather than the last matching link in LINKS */
       let cur = 'top';
+      let best = -Infinity;
       for (const l of LINKS) {
         const el = document.getElementById(l.href.slice(1));
-        if (el && el.getBoundingClientRect().top <= 140) cur = l.href.slice(1);
+        if (!el) continue;
+        const top = el.getBoundingClientRect().top;
+        if (top <= 140 && top > best) { best = top; cur = l.href.slice(1); }
       }
       setActive(cur);
     };
