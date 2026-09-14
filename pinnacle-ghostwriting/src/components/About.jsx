@@ -2,8 +2,10 @@ import { BOOKS } from '../data/content.js';
 import Book3d from './Book3d.jsx';
 
 export default function About({ onOpen }) {
-  /* same 8 books, same order — duplicated once for the seamless loop */
-  const loop = BOOKS.concat(BOOKS);
+  /* only 4 books, so the set is repeated until one half of the track is wider
+     than a large screen, then duplicated once for the seamless loop */
+  const set = [...BOOKS, ...BOOKS, ...BOOKS];
+  const loop = set.concat(set);
 
   return (
     <section className="about" id="about">

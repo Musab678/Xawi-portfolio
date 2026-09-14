@@ -1,9 +1,9 @@
 import { BOOKS, SERVICES } from '../data/content.js';
 import Book3d from './Book3d.jsx';
 
-/* showcase layout: col1 = 2 stacked, col2 = 1 centred, col3 = 2, col4 = 1, col5 = 2 */
-const SLOT = ['r1', 'r2', 'mid', 'r1', 'r2', 'mid', 'r1', 'r2'];
-const COL = [1, 1, 2, 3, 3, 4, 5, 5];
+/* showcase layout, 4 books over 3 columns: col1 = 1 centred, col2 = 2 stacked, col3 = 1 centred */
+const SLOT = ['mid', 'r1', 'r2', 'mid'];
+const COL = [1, 2, 2, 3];
 
 const Check = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -42,7 +42,7 @@ export default function Showcase() {
         <div className="wrap">
           <div className="sc-grid" id="scGrid">
             {BOOKS.map((b, i) => (
-              <div className={`bk rv-s ${SLOT[i]}`} style={{ gridColumn: COL[i] }} key={b.title}>
+              <div className={`bk rv-s ${SLOT[i]}`} style={{ '--col': COL[i] }} key={b.title}>
                 <Book3d book={b} />
               </div>
             ))}

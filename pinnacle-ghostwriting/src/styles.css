@@ -263,8 +263,8 @@ h3{font-size:clamp(1.2rem,1.9vw,1.55rem)}
 
 /* the color break runs THROUGH this band */
 .sc-books{background:linear-gradient(to bottom,var(--deep) 0 72%,var(--mint-bg) 72% 100%);padding:34px 0 0}
-.sc-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(12px,2vw,34px);align-items:start;max-width:1180px;margin-inline:auto}
-.sc-grid .bk{position:relative}
+.sc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,3vw,48px);align-items:start;max-width:760px;margin-inline:auto}
+.sc-grid .bk{position:relative;grid-column:var(--col)}
 .sc-grid .bk:hover{z-index:3}
 .sc-grid .r1{grid-row:1}
 .sc-grid .r2{grid-row:2;margin-top:26px}
@@ -382,6 +382,7 @@ h3{font-size:clamp(1.2rem,1.9vw,1.55rem)}
   .stat-grid{grid-template-columns:1fr 1fr;transform:translateY(28%)}
   .stats-pad{height:clamp(120px,18vw,180px)}
   .sc-grid{grid-template-columns:repeat(3,1fr)}
+  .sc-grid .bk{grid-column:auto}
   .sc-grid .mid{grid-row:auto;margin-top:0;align-self:start}
   .sc-grid .r1,.sc-grid .r2{grid-row:auto}
   .sc-grid .r2{margin-top:0}
@@ -564,11 +565,12 @@ h3{font-size:clamp(1.2rem,1.9vw,1.55rem)}
 .svc p{font-size:.88rem;line-height:1.6;color:var(--ink-2);transition:color .45s}
 
 .svc.on,.svc:hover{
-  background:#DCC08D;border-color:#DCC08D;transform:translateY(-6px);
-  box-shadow:0 18px 38px rgba(69,38,57,.18);
+  background:linear-gradient(115deg,var(--deep) 0%,#6E4059 48%,#A5677C 100%);
+  border-color:transparent;transform:translateY(-6px);
+  box-shadow:0 18px 38px rgba(69,38,57,.26);
 }
-.svc.on .svc-ico,.svc:hover .svc-ico{color:#2E1A26;transform:scale(1.06)}
-.svc.on h3,.svc:hover h3,.svc.on p,.svc:hover p{color:#2E1A26}
+.svc.on .svc-ico,.svc:hover .svc-ico{color:var(--gold);transform:scale(1.06)}
+.svc.on h3,.svc:hover h3,.svc.on p,.svc:hover p{color:#fff}
 /* releasing the default card once the pointer enters the grid */
 .svc-grid:hover .svc.on:not(:hover){
   background:#fff;border-color:#E8DBD2;transform:none;box-shadow:none;
