@@ -98,6 +98,9 @@ h3{font-size:clamp(1.2rem,1.9vw,1.55rem)}
 .nav a span{position:relative}
 .nav a:hover i,.nav a.active i{transform:scaleX(1)}
 .nav a:hover,.nav a.active{color:var(--plum)}
+/* one underline at a time: hovering another link takes it from the active one */
+.nav:has(a:hover) a.active:not(:hover) i{transform:scaleX(0)}
+.nav:has(a:hover) a.active:not(:hover){color:var(--ink)}
 .nav .btn{margin-left:10px;padding:13px 18px;font-size:.7rem}
 .burger{display:none;margin-left:auto;background:none;border:0;cursor:pointer;padding:8px}
 .burger span{display:block;width:25px;height:2.5px;background:var(--ink);margin:5px 0;transition:.3s}
